@@ -32,7 +32,8 @@ body {
         display: none; } }
 
 footer {
-  float: right; }
+  float: right;
+  margin-top: 20px; }
 
 #underwriter-nav {
   font-size: 12px;
@@ -77,3 +78,64 @@ footer {
   height: 30px !important;
   width: 30px !important;
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9Ikljb24iIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSItMTQgLTE0IDQ4IDQ4IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IC0xNCAtMTQgNDggNDgiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGxpbmVhckdyYWRpZW50IGlkPSJTVkdJRF8xXyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSI5MC4wNTI3IiB5MT0iLTk5Ljc2MDMiIHgyPSI5MC4wNTI3IiB5Mj0iLTEwNi4zODA5IiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDcuMjMzOCAwIDAgLTcuMjMzOCAtNjQxLjQ5OTggLTczNS41NjE5KSI+DQoJPHN0b3AgIG9mZnNldD0iMCIgc3R5bGU9InN0b3AtY29sb3I6IzRCNzFCOCIvPg0KCTxzdG9wICBvZmZzZXQ9IjEiIHN0eWxlPSJzdG9wLWNvbG9yOiMyOTNGN0UiLz4NCjwvbGluZWFyR3JhZGllbnQ+DQo8cGF0aCBmaWxsPSJ1cmwoI1NWR0lEXzFfKSIgZD0iTTMzLjkzMSwyNy45OTNjMCwzLjMwNC0yLjY4OSw1Ljk4My02LjAwMiw1Ljk4M0gtOC4wODJjLTMuMzE1LDAtNi4wMDEtMi42ODMtNi4wMDEtNS45ODNWLTcuOTI4DQoJYzAtMy4zMDgsMi42ODctNS45ODgsNi4wMDEtNS45ODhoMzYuMDExYzMuMzEyLDAsNi4wMDIsMi42ODEsNi4wMDIsNS45ODhWMjcuOTkzeiIvPg0KPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTI1LjYxMy00LjU1N2MwLDAtMy43MDcsMC02LjE2NiwwYy0zLjY2MiwwLTcuNzMyLDEuNTM1LTcuNzMyLDYuODM1YzAuMDE5LDEuODQ1LDAsMy42MTMsMCw1LjYwM0g3LjQ4MQ0KCXY2LjcyOGg0LjM2NnYxOS4zN2g4LjAyMVYxNC40OGg1LjI5NWwwLjQ3OS02LjYxOGgtNS45MTNjMCwwLDAuMDE2LTIuOTQ2LDAtMy44YzAtMi4wOTMsMi4xODQtMS45NzQsMi4zMTItMS45NzQNCgljMS4wNDIsMCwzLjA1OSwwLjAwMywzLjU3OCwwdi02LjY0NkgyNS42MTN6Ii8+DQo8L3N2Zz4NCg==); }
+
+div.container {
+  max-width: 970px; }
+
+div#current-book {
+  position: relative;
+  margin-top: 20px; }
+  @media (min-width: 1000px) {
+    div#current-book {
+      height: 369px; } }
+  div#current-book h1, div#current-book h2, div#current-book #this-month {
+    margin: 0; }
+  div#current-book h1 {
+    line-height: 0.8em;
+    margin-top: 10px; }
+  div#current-book h2 {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 10px; }
+  div#current-book #this-month {
+    font-size: 18px;
+    color: #75787b;
+    line-height: 1.1em;
+    font-weight: 500; }
+  div#current-book p.about-book {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.1em; }
+  div#current-book #fold-copy {
+    height: 100%; }
+  div#current-book #about-dorothy {
+    position: absolute;
+    bottom: 0;
+    background: #e3eefb;
+    padding: 5px 10px; }
+    div#current-book #about-dorothy h3 {
+      margin: 0; }
+    div#current-book #about-dorothy p {
+      margin-top: 0; }
+
+div#button-nav button {
+  width: 90%;
+  margin-left: 10%; }
+  @media (max-width: 768px) {
+    div#button-nav button {
+      border-radius: 0; } }
+div#button-nav div.col-sm-3 {
+  padding: 0;
+  margin-bottom: 20px; }
+
+div#past-books h3 {
+  margin: 0; }
+div#past-books .col-xs-4 {
+  padding: 0; }
+div#past-books .col-xs-8 {
+  padding-right: 0; }
+div#past-books img {
+  max-height: 190px; }
+div#past-books p {
+  margin-bottom: 5px;
+  line-height: 1.1em; }

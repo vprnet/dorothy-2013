@@ -1,24 +1,65 @@
 {% extends "base.html" %}
 
-{% block title %}VPR: App Template{% endblock %}
+{% block title %}VPR: Dorothy's List{% endblock %}
 {% block description %}This is the VPR app template. We use it to generate HTML locally and then push it to S3. Cheap, easy, and indestructible!{% endblock %}
 
+{% block header_title %}Dorothy's List{% endblock %}
 {% block content %}
 
-<div class="jumbotron" style="margin-top: 25px;">
-    <h1>VPR Template</h1>
-    <p>This page was built using the VPR App Template, which is open sourced and available on <a href="https://github.com/vprnet/app-template">github</a>. Read on below to find out more about the template and how we use it for our projects.</p>
-    <p><a class="btn btn-large btn-primary" href="https://github.com/vprnet/app-template#vpr-project-skeleton">View Template Docs &raquo;</a></p>
+<div id="current-book" class="row">
+    <div class="col-sm-4">
+        <img class="img-responsive" src="{{ url_for('static', filename='img/dec-book.jpg') }}">
+    </div>
+    <div id="fold-copy" class="col-sm-8">
+        <h3 id="this-month">This Month's Book</h3>
+        <h1>Bomb</h1>
+        <h2>By Steve Sheinkin</h2>
+        <p class="about-book">In December of 1938, a chemist in a German laboratory made a shocking discovery: When placed next to radioactive material, a Uranium atom split in two. That simple discovery launched a scientific race that spanned 3 continents.</p>
+        <p class="about-book" id="question">Got a question for the author? <button type="button" class="btn btn-default btn-xs btn-primary">Join the Conversation</button></p>
+        <div id="about-dorothy">
+            <h3>About Dorothy's List</h3>
+            <p>In December of 1938, a chemist in a German laboratory made a shocking discovery: When placed next to radioactive material, a Uranium atom split in two. That simple discovery launched a scientific race that spanned 3 continents.</p>
+        </div>
+    </div>
 </div>
 
-<h2 style="padding-left: 60px;">Develop in Python</h2>
-<p style="padding: 10px 60px 30px; font-size: 20px; font-weight: 300;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<h2 style="padding-left: 60px;">Hack in Flask</h2>
-<p style="padding: 10px 60px 30px; font-size: 20px; font-weight: 300;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<h2 style="padding-left: 60px;">Bootstrap? Bootstrap!</h2>
-<p style="padding: 10px 60px 30px; font-size: 20px; font-weight: 300;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<h2 style="padding-left: 60px;">Flat Files on S3: Fast, Cheap, and Resilient</h2>
-<p style="padding: 10px 60px 30px; font-size: 20px; font-weight: 300;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<hr>
+
+<div id="button-nav" class="rows">
+    <div class="col-sm-3">
+        <button type="button" class="btn btn-default">Past Books</button>
+    </div>
+    <div class="col-sm-3">
+        <button type="button" class="btn btn-default">Join the Conversation</button>
+    </div>
+    <div class="col-sm-3">
+        <button type="button" class="btn btn-default">For Teachers</button>
+    </div>
+    <div class="col-sm-3">
+        <button type="button" class="btn btn-default">Upcoming Books</button>
+    </div>
+</div>
+
+<div id="past-books" class="tabbed-content">
+    <div class="row">
+        <div class="col-sm-6">
+            <img class="img-responsive col-xs-4" src="{{ url_for('static', filename='img/dec-book.jpg') }}">
+            <div class="col-xs-8">
+                <h3>Bomb</h3>
+                <p>By: Steve Sheinkin</p>
+                <p>The race to build&mdash;and steal&mdash;the world's most dangerous weapon</p>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <img class="img-responsive col-xs-4" src="{{ url_for('static', filename='img/nov-book.jpg') }}">
+            <div class="col-xs-8">
+                <h3>The Expeditioners</h3>
+                <p>By: S.S. Taylor</p>
+                <p>Computers have failed, electricity is extinct, and the race to discover new lands is underway!</p>
+            </div>
+        </div>
+    </div>
+
 {% endblock %}
 
 {% block scripts %}
