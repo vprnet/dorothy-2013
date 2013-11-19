@@ -15,13 +15,19 @@
         <h1>Bomb</h1>
         <h2>By Steve Sheinkin</h2>
         <p class="about-book">In December of 1938, a chemist in a German laboratory made a shocking discovery: When placed next to radioactive material, a Uranium atom split in two. That simple discovery launched a scientific race that spanned 3 continents.</p>
-        <p class="about-book" id="question">Got a question for the author? <button type="button" class="btn btn-default btn-xs btn-primary">Join the Conversation</button></p>
-        <div id="about-dorothy">
-            <h3>About Dorothy's List</h3>
-            <p>In December of 1938, a chemist in a German laboratory made a shocking discovery: When placed next to radioactive material, a Uranium atom split in two. That simple discovery launched a scientific race that spanned 3 continents.</p>
+        <div id="student-teacher">
+            <p class="about-book" id="question"><span id="students">Students:</span> Have a question for the author? <a href="#conversation">Ask it here.</a></p>
+            <p class="about-book"><span id="for-teachers">Teachers:</span> Check out our <a href="#teachers">Just For Teachers</a> section to find out more about the project or to get in touch with <a href="#amy">Amy Kolb Noyes</a>, the project curator.</p>
         </div>
     </div>
 </div>
+<!--<div class="row visible-sm" id="about-dorothy-small">
+    <div class="col-sm-12">
+        <h3>About Dorothy's List</h3>
+        <p>In December of 1938, a chemist in a German laboratory made a shocking discovery: When placed next to radioactive material, a Uranium atom split in two. That simple discovery launched a scientific race that spanned 3 continents.</p>
+    </div>
+</div>
+-->
 
 <hr>
 
@@ -36,26 +42,58 @@
         <button type="button" class="btn btn-default">For Teachers</button>
     </div>
     <div class="col-sm-3">
-        <button type="button" class="btn btn-default">Upcoming Books</button>
+        <button type="button" id="last-nav-btn" class="btn btn-default">Upcoming Books</button>
     </div>
 </div>
 
 <div id="past-books" class="tabbed-content">
     <div class="row">
-        <div class="col-sm-6">
-            <img class="img-responsive col-xs-4" src="{{ url_for('static', filename='img/dec-book.jpg') }}">
-            <div class="col-xs-8">
-                <h3>Bomb</h3>
-                <p>By: Steve Sheinkin</p>
-                <p>The race to build&mdash;and steal&mdash;the world's most dangerous weapon</p>
+        <div class="col-md-6">
+            <div class="row">
+                <img class="img-responsive col-sm-4" src="{{ url_for('static', filename='img/dec-book.jpg') }}">
+                <div class="col-sm-8">
+                    <h3>Bomb</h3>
+                    <p>By Steve Sheinkin</p>
+                    <p>In December of 1938, a chemist in a German laboratory made a shocking discovery: When placed next to radioactive material, a Uranium atom split in two. That simple discovery launched a scientific race that spanned 3 continents.</p>
+                    <div class="audio-comments row">
+                        <div class="col-xs-4 audio-div">
+                            <span class="play-text">Play</span>
+                            <span class="audio-text">Audio</span>
+                            <a class="audio_play" onclick="this.firstChild.play()"><audio src="http://cpa.ds.npr.org/vpr/audio/2013/11/vpr-dorothys-list-bomb-20131104.mp3" type="audio/mpeg"></audio>
+                                <button type="button" class="btn btn-default audio-button">
+                                    <span class="glyphicon glyphicon-play"></span>
+                                </button>
+                            </a>
+                        </div>
+                        <div class="view-comments col-xs-8">
+                            <a href="#bomb-comments">View Comments (5)</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="col-sm-6">
-            <img class="img-responsive col-xs-4" src="{{ url_for('static', filename='img/nov-book.jpg') }}">
-            <div class="col-xs-8">
-                <h3>The Expeditioners</h3>
-                <p>By: S.S. Taylor</p>
-                <p>Computers have failed, electricity is extinct, and the race to discover new lands is underway!</p>
+        <div class="col-md-6">
+            <div class="row">
+                <img class="img-responsive col-sm-4" src="{{ url_for('static', filename='img/nov-book.jpg') }}">
+                <div class="col-sm-8">
+                    <h3>The Expeditioners</h3>
+                    <p>By S.S. Taylor</p>
+                    <p>Computers have failed, electricity is extinct, and the race to discover new lands is underway!</p>
+                    <div class="audio-comments row">
+                        <div class="col-xs-4 audio-div">
+                            <span class="play-text">Play</span>
+                            <span class="audio-text">Audio</span>
+                            <a class="audio_play" onclick="this.firstChild.play()"><audio src="http://cpa.ds.npr.org/vpr/audio/2013/11/vpr-dorothys-list-bomb-20131104.mp3" type="audio/mpeg"></audio>
+                                <button type="button" class="btn btn-default audio-button">
+                                    <span class="glyphicon glyphicon-play"></span>
+                                </button>
+                            </a>
+                        </div>
+                        <div class="view-comments col-xs-8">
+                            <a href="#bomb-comments">View Comments (34)</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
