@@ -37,38 +37,44 @@ div#current-book {
         font-weight: 500;
     }
     p.about-book {
-        font-size: 20px;
-        font-weight: 400;
+        font-size: 22px;
+        font-weight: 300;
         line-height: 1.1em;
     }
     #fold-copy {
         height: 100%;
     }
     #student-teacher {
-        position: absolute;
-        bottom: 0;
+        margin-top: 50px;
+        width: 95%;
         margin-right: 15px;
-        background: lighten($blue, 40%);
-        padding: 5px 10px;
         line-height: 1.1em;
         span#students, span#for-teachers {
             font-weight: 500;
             font-size: 22px;
+            margin-right: 10px
+        }
+        span#students {
+            margin-right: 13px;
         }
         h3 {
             margin: 0;
             margin-bottom: 3px;
         }
         p {
-            margin-top: 0;
-            margin-bottom: 5px;
+            margin-top: 25px;
         }
         a {
             color: lighten($gray, 10%);
-            border: none;
+            border-color: lighten($gray, 30%);
             &:hover {
-                text-decoration: underline;
+                text-decoration: none;
+                color: darken($gray, 10%);
+                border-color: $gray;
             }
+        }
+        p#contact-amy {
+            margin-left: 104px;
         }
     }
     @media (min-width: 1000px) {
@@ -122,9 +128,8 @@ div#current-book {
 div#button-nav {
     button {
         width: 90%;
-        margin-left: 8%;
     }
-    div.col-sm-3 {
+    div.col-sm-4 {
         padding: 0;
         margin-bottom: 20px;
         &:first-child {
@@ -149,14 +154,10 @@ div#button-nav {
     @media (max-width: $tablet) {
         button {
             border-radius: 0;
-            margin-left: 0;
+            margin-left: 0 !important;
             width: 100%;
-            border-bottom: none;
         }
-        #last-nav-btn {
-            border-bottom: 1px solid lighten($gray, 30%);
-        }
-        div.col-sm-3 {
+        div.col-sm-4 {
             margin-bottom: 0;
         }
         margin-bottom: 20px;
