@@ -111,12 +111,17 @@ div#current-book {
     line-height: 1.1em;
     font-weight: 500; }
   div#current-book p.about-book {
+    margin-top: 20px;
     font-size: 22px;
     font-weight: 300;
     line-height: 1.1em; }
   div#current-book #fold-copy {
     height: 100%; }
   div#current-book #student-teacher {
+    position: absolute;
+    bottom: 0;
+    background: #e3eefb;
+    padding: 10px;
     margin-top: 50px;
     width: 95%;
     margin-right: 15px;
@@ -131,7 +136,7 @@ div#current-book {
       margin: 0;
       margin-bottom: 3px; }
     div#current-book #student-teacher p {
-      margin-top: 25px; }
+      margin-top: 10px; }
     div#current-book #student-teacher a {
       color: #8f9294;
       border-color: #c3c5c6; }
@@ -141,12 +146,29 @@ div#current-book {
         border-color: #75787b; }
     div#current-book #student-teacher p#contact-amy {
       margin-left: 104px; }
+    @media (max-width: 768px) {
+      div#current-book #student-teacher {
+        position: relative;
+        width: 100%;
+        margin-top: 20px; }
+        div#current-book #student-teacher span#students, div#current-book #student-teacher span#for-teachers {
+          font-size: 14px;
+          display: block;
+          margin-bottom: 3px; }
+        div#current-book #student-teacher p {
+          font-size: 12px; } }
   @media (min-width: 1000px) {
     div#current-book {
       height: 369px; } }
   @media (min-width: 768px) and (max-width: 1000px) {
     div#current-book {
-      height: 276px; } }
+      height: 276px; }
+      div#current-book #student-teacher {
+        width: 470px; }
+        div#current-book #student-teacher span#students, div#current-book #student-teacher span#for-teachers {
+          font-size: 18px; }
+        div#current-book #student-teacher p {
+          font-size: 16px; } }
   @media (max-width: 1000px) {
     div#current-book h1 {
       font-size: 28px;
@@ -170,6 +192,8 @@ div#current-book {
         font-size: 16px;
         font-weight: 500; } }
   @media (max-width: 768px) {
+    div#current-book p.about-book {
+      font-size: 16px; }
     div#current-book #this-month {
       margin-top: 10px; }
     div#current-book #about-dorothy {
@@ -177,20 +201,23 @@ div#current-book {
       margin-top: 20px;
       margin-right: 0; } }
 
-div#button-nav button {
-  width: 90%; }
 div#button-nav div.col-sm-4 {
   padding: 0;
   margin-bottom: 20px; }
   div#button-nav div.col-sm-4:first-child button {
     margin-left: 0; }
   div#button-nav div.col-sm-4:nth-child(2) button {
-    margin-left: 5%; }
+    margin-left: 4%; }
   div#button-nav div.col-sm-4:last-child button {
-    margin-left: 10%; }
+    margin-left: 8%; }
 @media (min-width: 768px) {
   div#button-nav {
-    height: 34px; } }
+    height: 34px; }
+    div#button-nav button {
+      width: 289px; } }
+@media (max-width: 1000px) {
+  div#button-nav button {
+    width: 220px; } }
 @media (max-width: 768px) {
   div#button-nav {
     margin-bottom: 20px; }
@@ -203,6 +230,8 @@ div#button-nav div.col-sm-4 {
 
 div#past-books {
   height: 184px; }
+  div#past-books .old-book .row {
+    margin-right: 0; }
   div#past-books h3 {
     margin: 0; }
   div#past-books .col-sm-4 {
@@ -229,7 +258,7 @@ div#past-books {
   div#past-books div.audio-comments {
     position: absolute;
     bottom: 0;
-    width: 308px;
+    width: 300px;
     background: #eaf7e4;
     margin: 0;
     padding: 2px 2px 2px 10px;
@@ -249,8 +278,8 @@ div#past-books {
         bottom: -2px;
         font-size: 14px; }
     div#past-books div.audio-comments div.view-comments {
-      font-size: 20px;
-      padding: 2px 0;
+      font-size: 18px;
+      padding: 2px 5px 0 0;
       text-align: center; }
       div#past-books div.audio-comments div.view-comments a {
         color: #75787b;
@@ -259,3 +288,26 @@ div#past-books {
           border-color: #75787b;
           color: #434547;
           text-decoration: none; }
+    @media (max-width: 1000px) and (min-width: 768px) {
+      div#past-books div.audio-comments {
+        padding: 8px 60px;
+        width: 470px; } }
+    @media (max-width: 768px) {
+      div#past-books div.audio-comments {
+        position: relative;
+        margin-top: 15px; }
+        div#past-books div.audio-comments div.view-comments {
+          font-size: 14px;
+          padding-top: 5px; } }
+  @media (max-width: 1000px) and (min-width: 768px) {
+    div#past-books .old-cover {
+      padding-right: 10px;
+      height: 275px; }
+    div#past-books .old-book-text {
+      height: 275px;
+      padding-left: 20px; }
+      div#past-books .old-book-text h3 {
+        font-size: 24px; }
+      div#past-books .old-book-text p {
+        font-size: 18px;
+        font-weight: 300; } }
