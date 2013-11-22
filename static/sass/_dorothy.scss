@@ -13,13 +13,15 @@ div#current-book {
     }
     h1 {
         line-height: 0.8em;
-        margin-top: 5px;
+        margin-top: 10px;
     }
     h2 {
-        font-size: 22px;
+        margin-top: 2px;
+        font-size: 20px;
         font-weight: 400;
         margin-bottom: 10px;
-        color: lighten($black, 10%);
+        margin-left: 1px;
+        color: lighten($black, 15%);
     }
     a {
         color: $gray;
@@ -113,7 +115,7 @@ div#current-book {
     @media (max-width: 1000px) {
         h1 {
             font-size: 28px;
-            margin-top: 2px;
+            margin-top: 5px;
         }
         h2 {
             font-size: 18px;
@@ -131,14 +133,6 @@ div#current-book {
                 font-weight: 500;
             }
         }
-        #about-dorothy {
-            h3 {
-                font-size: 16px;
-                font-weight: 500;
-            }
-            font-size: 14px;
-            line-height: 1em;
-        }
     }
     @media (max-width: $tablet ) {
         p.about-book {
@@ -147,15 +141,23 @@ div#current-book {
         #this-month {
             margin-top: 10px;
         }
-        #about-dorothy {
-            position: relative;
-            margin-top: 20px;
-            margin-right: 0;
-        }
     }
 }
 
 div#button-nav {
+    button.btn-primary {
+        background: lighten($blue, 20%);
+        border-color: lighten($blue, 10%);
+        &:hover {
+            background: $blue;
+        }
+    }
+    button.btn-success {
+        background: lighten($green, 5%);
+        &:hover {
+            background: darken($green, 5%);
+        }
+    }
     div.col-sm-4 {
         padding: 0;
         margin-bottom: 20px;
@@ -192,6 +194,12 @@ div#button-nav {
             margin-left: 0 !important;
             width: 100%;
         }
+        #past-book-btn {
+            border-radius: 3px 3px 0 0;
+        }
+        #about-dorothy-btn {
+            border-radius: 0 0 3px 3px;
+        }
         div.col-sm-4 {
             margin-bottom: 0;
         }
@@ -200,6 +208,7 @@ div#button-nav {
 }
 
 div#past-books {
+    display: block;
     height: 184px;
     .old-book {
         .row {
@@ -232,7 +241,7 @@ div#past-books {
     }
     @media (min-width: 1000px) {
         img {
-            max-height: 184px;
+            height: 184px;
         }
         .col-sm-8 {
             height: 184px;
@@ -307,6 +316,56 @@ div#past-books {
             p {
                 font-size: 18px;
                 font-weight: 300;
+            }
+        }
+    }
+}
+
+#about-dorothy {
+    display: none;
+    #meet-amy {
+        #contact-amy {
+            margin-top: 60px;
+        }
+        h3 {
+            margin-bottom: 15px;
+        }
+        h4 {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        ul {
+            list-style: none;
+            padding-left: 0px;
+            color: $gray;
+        }
+        p {
+            margin-top: 15px;
+        }
+        @media (max-width: 1000px) {
+            #contact-amy {
+                margin-top: 40px;
+            }
+            h4 {
+                font-size: 14px;
+            }
+            ul {
+                font-size: 12px;
+            }
+        }
+        @media (max-width: $tablet) {
+            #contact-amy {
+                margin-top: 40px;
+            }
+            .row {
+                margin: 0;
+            }
+            h4 {
+                font-size: 14px;
+            }
+            ul {
+                margin-top: 5px;
+                font-size: 12px;
             }
         }
     }
