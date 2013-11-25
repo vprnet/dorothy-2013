@@ -7,12 +7,12 @@ from config import BASE_URL
 def index():
     page_url = BASE_URL + request.path
     social = {
-        'title': 'VPR App Template',
-        'subtitle': 'Build HTML with Python, serve statically from S3',
-        'img': 'http://www.vpr.net/apps/vpr-logo-green-letters.png',
-        'description': 'The VPR App Template is available as an open source repository on Github.',
-        'twitter_text': 'This VPR App Template is awesome!! You should check it out',
-        'twitter_hashtag': 'dotCom'
+        'title': "Dorothy's List",
+        'subtitle': 'A montly read-along with VPR for young adults',
+        'img': 'http://www.vpr.net/apps/dorothy/static/img/dec-book.jpg',
+        'description': "Dorothy's List is a monthly series by VPR based on the Dorothy Canfield Fisher reading list",
+        'twitter_text': "Read along with Dorothy's List, a VPR series",
+        'twitter_hashtag': 'reading'
     }
 
     return render_template('content.html', social=social, page_url=page_url)
