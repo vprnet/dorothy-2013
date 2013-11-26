@@ -1,9 +1,9 @@
 import sys
 from app import app, db, admin
-from app.models import Book
+from app.models import BookAdmin
 from flask_frozen import Freezer
-from flask.ext.admin.contrib.sqla import ModelView
 from upload_s3 import set_metadata
+import os.path as op
 
 freezer = Freezer(app)
 
@@ -12,6 +12,7 @@ if __name__ == '__main__':
         freezer.freeze()
         set_metadata()
     else:
-        admin.add_view(ModelView(Book, db.session))
+        path = op.join(op.dirname(__file__), 'app/static/uploaded')
+        admin.add_view(BookAdmin())
         db.create_all()
         app.run(debug=True)

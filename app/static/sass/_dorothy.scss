@@ -113,6 +113,12 @@ div#current-book {
         }
     }
     @media (max-width: 1000px) {
+        .col-sm-4 {
+            height: 100%;
+            img {
+                max-height: 100%;
+            }
+        }
         h1 {
             font-size: 28px;
             margin-top: 5px;
@@ -159,7 +165,6 @@ div#button-nav {
         }
     }
     div.col-sm-4 {
-        padding: 0;
         margin-bottom: 20px;
         &:first-child {
             button {
@@ -168,12 +173,12 @@ div#button-nav {
         }
         &:nth-child(2) {
             button {
-                margin-left: 4%;
+                margin-left: 1%;
             }
         }
         &:last-child {
             button {
-                margin-left: 8%;
+                margin-left: 2%;
             }
         }
     }
@@ -210,6 +215,9 @@ div#button-nav {
 div#past-books {
     display: block;
     height: 184px;
+    .past-row {
+        margin-top: 15px;
+    }
     .old-book {
         .row {
             margin-right: 0;

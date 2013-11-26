@@ -172,6 +172,10 @@ div#current-book {
         div#current-book #student-teacher p {
           font-size: 16px; } }
   @media (max-width: 1000px) {
+    div#current-book .col-sm-4 {
+      height: 100%; }
+      div#current-book .col-sm-4 img {
+        max-height: 100%; }
     div#current-book h1 {
       font-size: 28px;
       margin-top: 5px; }
@@ -203,14 +207,13 @@ div#button-nav button.btn-success {
   div#button-nav button.btn-success:hover {
     background: #468a29; }
 div#button-nav div.col-sm-4 {
-  padding: 0;
   margin-bottom: 20px; }
   div#button-nav div.col-sm-4:first-child button {
     margin-left: 0; }
   div#button-nav div.col-sm-4:nth-child(2) button {
-    margin-left: 4%; }
+    margin-left: 1%; }
   div#button-nav div.col-sm-4:last-child button {
-    margin-left: 8%; }
+    margin-left: 2%; }
 @media (min-width: 768px) {
   div#button-nav {
     height: 34px; }
@@ -236,6 +239,8 @@ div#button-nav div.col-sm-4 {
 div#past-books {
   display: block;
   height: 184px; }
+  div#past-books .past-row {
+    margin-top: 15px; }
   div#past-books .old-book .row {
     margin-right: 0; }
   div#past-books h3 {
