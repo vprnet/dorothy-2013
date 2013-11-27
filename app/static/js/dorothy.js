@@ -16,11 +16,13 @@ $('#upcoming-book-btn').on('click', function() {
     $('#about-dorothy-btn').attr("class", "btn btn-primary");
 });
 
-$('#about-dorothy-btn').on('click', function() {
+$('#about-dorothy-btn, #contact-amy-prompt').on('click', function() {
     $('#past-books').css("display", "none");
     $('#upcoming-books').css("display", "none");
     $('#about-dorothy').css("display", "block");
-    $(this).attr("class", "btn btn-success");
+    if (this.type === 'button') {
+        $(this).attr("class", "btn btn-success");
+    }
     $('#upcoming-book-btn').attr("class", "btn btn-primary");
     $('#past-book-btn').attr("class", "btn btn-primary");
 });
@@ -46,8 +48,6 @@ $('.count-comments').each(function () {
     urlArray.push('link:' + url);
 });
 
-console.log(urlArray);
-
 $.ajax({
     type: 'GET',
     url: "https://disqus.com/api/3.0/threads/set.jsonp",
@@ -56,7 +56,6 @@ $.ajax({
     dataType: 'jsonp',
     success: function (result) {
 
-        console.log(result.response);
         for (var i in result.response) {
 
             var count = result.response[i].posts;
