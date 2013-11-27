@@ -1,6 +1,7 @@
 body {
     color: $black;
 }
+
 div.container {
     max-width: 970px;
 }
@@ -215,9 +216,6 @@ div#button-nav {
 div#past-books {
     display: block;
     height: 184px;
-    .past-row {
-        margin-top: 15px;
-    }
     .old-book {
         .row {
             margin-right: 0;

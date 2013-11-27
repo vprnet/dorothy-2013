@@ -42,7 +42,7 @@
             <div class="row">
                 <div class="col-sm-4">
                         <img class="old-cover img-responsive" src="{{ url_for('static', filename='img/harrys.jpg') }}">
-                    </div>
+                </div>
                 <div class="old-book-text col-sm-8">
                     <h3>See You At Harry's</h3>
                     <p>By Jo Knowles</p>
@@ -58,19 +58,22 @@
                             </a>
                         </div>
                         <div class="view-comments col-xs-8">
-                            <a href="#bomb-comments">View Comments (5)</a>
+                            <a href="#bomb-comments">View Comments (0)</a>
                         </div>
                     </div>
                 </div>
             </div>
+        <hr class="visible-xs visible-sm">
         </div>
         <div class="old-book col-md-6">
             <div class="row">
                 <div class="col-sm-4">
-                        <img class="old-cover img-responsive" src="{{ url_for('static', filename='img/dec-book.jpg') }}">
+                        <a href="http://digital.vpr.net/post/dorothys-list-story-spies-and-nuclear-secrets-told-bomb">
+                            <img class="old-cover img-responsive" src="{{ url_for('static', filename='img/dec-book.jpg') }}">
+                        </a>
                     </div>
                 <div class="old-book-text col-sm-8">
-                    <h3>Bomb</h3>
+                    <h3><a href="http://digital.vpr.net/post/dorothys-list-story-spies-and-nuclear-secrets-told-bomb">Bomb</a></h3>
                     <p>By Steve Sheinkin</p>
                     <p>In December of 1938, a chemist in a German laboratory made a shocking discovery: When placed next to radioactive material, a Uranium atom split in two. That simple discovery launched a scientific race that spanned 3 continents.</p>
                     <div class="audio-comments row">
@@ -84,22 +87,23 @@
                             </a>
                         </div>
                         <div class="view-comments col-xs-8">
-                            <a href="#bomb-comments">View Comments (5)</a>
+                            <a href="http://digital.vpr.net/post/dorothys-list-story-spies-and-nuclear-secrets-told-bomb#disqus_thread" class="count-comments"
+                                data-disqus-url="http://digital.vpr.net/post/dorothys-list-story-spies-and-nuclear-secrets-told-bomb">View Comments (0)</a>
                         </div>
                     </div>
                 </div>
             </div>
-<hr class="visible-sm visible-xs">
         </div>
-
-
     </div>
+    <hr>
     <div class="row past-row">
         <div class="old-book col-md-6">
             <div class="row">
-                <img class="old-cover img-responsive col-sm-4" src="{{ url_for('static', filename='img/nov-book.jpg') }}">
+                <a href="http://digital.vpr.net/post/dorothys-list-story-spies-and-nuclear-secrets-told-bomb">
+                    <img class="old-cover img-responsive col-sm-4" src="{{ url_for('static', filename='img/nov-book.jpg') }}">
+                </a>
                 <div class="old-book-text col-sm-8">
-                    <h3>The Expeditioners</h3>
+                    <h3><a href="http://digital.vpr.net/post/dorothys-list-story-spies-and-nuclear-secrets-told-bomb">The Expeditioners</a></h3>
                     <p>By S.S. Taylor</p>
                     <p>Computers have failed, electricity is extinct, and the race to discover new lands is underway!</p>
                     <div class="audio-comments row">
@@ -113,7 +117,9 @@
                             </a>
                         </div>
                         <div class="view-comments col-xs-8">
-                            <a href="#bomb-comments">View Comments (34)</a>
+                            <a href="http://digital.vpr.net/post/dorothys-list-expeditioners#disqus_thread"
+                                class="count-comments"
+                                data-disqus-url=http://digital.vpr.net/post/dorothys-list-expeditioners">View Comments (0)</a>
                         </div>
                     </div>
                 </div>
@@ -152,10 +158,11 @@
     </div>
 </div>
 
+
 {% endblock %}
 
 {% block scripts %}
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/js/bootstrap.min.js"></script>
-    <script src="{{ url_for('static', filename='js/dorothy-ck.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/dorothy.js') }}"></script>
 {% endblock %}

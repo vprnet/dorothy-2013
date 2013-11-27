@@ -36,3 +36,33 @@ $('a.audio_play').click(function() {
             .attr('class', 'glyphicon glyphicon-pause');
     }
 });
+
+var disqusPublicKey = "gUTvdgLF0mf2OdeRm7K4IyX2sagdTqSh1pa5JT9dcjdfSpv8X7q9eAHbSQTSGBip";
+var disqusShortname = "npr-vpr";
+
+var urlArray = [];
+$('.count-comments').each(function () {
+    var url = $(this).attr('data-disqus-url');
+    urlArray.push('link:' + url);
+});
+
+console.log(urlArray);
+
+$.ajax({
+    type: 'GET',
+    url: "https://disqus.com/api/3.0/threads/set.jsonp",
+    data: { api_key: disqusPublicKey, forum : disqusShortname, thread : urlArray },
+    cache: false,
+    dataType: 'jsonp',
+    success: function (result) {
+
+        console.log(result.response);
+        for (var i in result.response) {
+
+            var count = result.response[i].posts;
+
+            $('a[data-disqus-url="' + result.response[i].link + '"]').text("View Comments (" + count + ")");
+
+        }
+    }
+});
