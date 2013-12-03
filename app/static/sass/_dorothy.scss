@@ -239,7 +239,7 @@ div#past-books, div#upcoming-books {
     }
     p {
         margin-bottom: 5px;
-        line-height: 1.0em;
+        line-height: 1.3em;
     }
     span.aired {
         color: lighten($gray, 20%);
@@ -254,7 +254,7 @@ div#past-books, div#upcoming-books {
             height: 184px;
         }
         .col-sm-8 {
-            height: 184px;
+            height: 225px;
             position: relative;
         }
     }

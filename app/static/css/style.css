@@ -254,7 +254,7 @@ div#past-books, div#upcoming-books {
     font-size: 20px; }
   div#past-books p, div#upcoming-books p {
     margin-bottom: 5px;
-    line-height: 1.0em; }
+    line-height: 1.3em; }
   div#past-books span.aired, div#upcoming-books span.aired {
     color: #a9abad; }
   div#past-books button.audio-button, div#upcoming-books button.audio-button {
@@ -265,7 +265,7 @@ div#past-books, div#upcoming-books {
     div#past-books img, div#upcoming-books img {
       height: 184px; }
     div#past-books .col-sm-8, div#upcoming-books .col-sm-8 {
-      height: 184px;
+      height: 225px;
       position: relative; } }
   @media (max-width: 768px) {
     div#past-books img, div#upcoming-books img {
