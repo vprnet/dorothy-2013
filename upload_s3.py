@@ -21,6 +21,7 @@ content_types = {
     '.csv': 'text/csv',
     '.html': 'text/html',
     '.svg': 'image/svg+xml',
+    '.pdf': 'application/pdf',
     '.json': 'text/json'
 }
 

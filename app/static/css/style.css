@@ -165,6 +165,9 @@ div#current-book {
   @media (min-width: 768px) and (max-width: 1000px) {
     div#current-book {
       height: 276px; }
+      div#current-book p.about-book {
+        margin-top: 10px;
+        font-size: 16px !important; }
       div#current-book #student-teacher {
         width: 470px; }
         div#current-book #student-teacher span#students, div#current-book #student-teacher span#for-teachers {
@@ -237,34 +240,39 @@ div#button-nav div.col-sm-4 {
       margin-bottom: 0; } }
 
 div#past-books {
-  display: block;
+  display: block; }
+
+div#past-books, div#upcoming-books {
   height: 184px; }
-  div#past-books .old-book .row {
+  div#past-books .book .row, div#upcoming-books .book .row {
     margin-right: 0; }
-  div#past-books h3 {
+  div#past-books h3, div#upcoming-books h3 {
     margin: 0; }
-  div#past-books .col-sm-4 {
+  div#past-books .col-sm-4, div#upcoming-books .col-sm-4 {
     padding-right: 0; }
-  div#past-books .col-sm-8 {
+  div#past-books .col-sm-8, div#upcoming-books .col-sm-8 {
     padding-right: 0; }
-  div#past-books h3 {
+  div#past-books h3, div#upcoming-books h3 {
     font-size: 20px; }
-  div#past-books p {
+  div#past-books p, div#upcoming-books p {
     margin-bottom: 5px;
     line-height: 1.0em; }
-  div#past-books span.aired {
+  div#past-books span.aired, div#upcoming-books span.aired {
     color: #a9abad; }
-  div#past-books button.audio-button {
+  div#past-books button.audio-button, div#upcoming-books button.audio-button {
     font-size: 22px;
     padding: 2px 5px 0;
     margin-left: 50px; }
   @media (min-width: 1000px) {
-    div#past-books img {
+    div#past-books img, div#upcoming-books img {
       height: 184px; }
-    div#past-books .col-sm-8 {
+    div#past-books .col-sm-8, div#upcoming-books .col-sm-8 {
       height: 184px;
       position: relative; } }
-  div#past-books div.audio-comments {
+  @media (max-width: 768px) {
+    div#past-books img, div#upcoming-books img {
+      margin-bottom: 15px; } }
+  div#past-books div.audio-comments, div#upcoming-books div.audio-comments {
     position: absolute;
     bottom: 0;
     width: 300px;
@@ -272,54 +280,57 @@ div#past-books {
     margin: 0;
     padding: 2px 2px 2px 10px;
     color: #5c5e61; }
-    div#past-books div.audio-comments div.audio-div {
+    div#past-books div.audio-comments div.audio-div, div#upcoming-books div.audio-comments div.audio-div {
       padding: 0;
       position: relative; }
-      div#past-books div.audio-comments div.audio-div span.play-text, div#past-books div.audio-comments div.audio-div span.audio-text {
+      div#past-books div.audio-comments div.audio-div span.play-text, div#past-books div.audio-comments div.audio-div span.audio-text, div#upcoming-books div.audio-comments div.audio-div span.play-text, div#upcoming-books div.audio-comments div.audio-div span.audio-text {
         position: absolute;
         width: 40px;
         text-align: center;
         font-weight: 500; }
-      div#past-books div.audio-comments div.audio-div span.play-text {
+      div#past-books div.audio-comments div.audio-div span.play-text, div#upcoming-books div.audio-comments div.audio-div span.play-text {
         font-size: 19px;
         top: -5px; }
-      div#past-books div.audio-comments div.audio-div span.audio-text {
+      div#past-books div.audio-comments div.audio-div span.audio-text, div#upcoming-books div.audio-comments div.audio-div span.audio-text {
         bottom: -2px;
         font-size: 14px; }
-    div#past-books div.audio-comments div.view-comments {
+    div#past-books div.audio-comments div.view-comments, div#upcoming-books div.audio-comments div.view-comments {
       font-size: 18px;
       padding: 2px 5px 0 0;
       text-align: center; }
-      div#past-books div.audio-comments div.view-comments a {
+      div#past-books div.audio-comments div.view-comments a, div#upcoming-books div.audio-comments div.view-comments a {
         color: #75787b;
         border-bottom: 2px solid #c3c5c6; }
-        div#past-books div.audio-comments div.view-comments a:hover {
+        div#past-books div.audio-comments div.view-comments a:hover, div#upcoming-books div.audio-comments div.view-comments a:hover {
           border-color: #75787b;
           color: #434547;
           text-decoration: none; }
     @media (max-width: 1000px) and (min-width: 768px) {
-      div#past-books div.audio-comments {
+      div#past-books div.audio-comments, div#upcoming-books div.audio-comments {
         padding: 8px 60px;
         width: 470px; } }
     @media (max-width: 768px) {
-      div#past-books div.audio-comments {
+      div#past-books div.audio-comments, div#upcoming-books div.audio-comments {
         position: relative;
         margin-top: 15px; }
-        div#past-books div.audio-comments div.view-comments {
+        div#past-books div.audio-comments div.view-comments, div#upcoming-books div.audio-comments div.view-comments {
           font-size: 14px;
           padding-top: 5px; } }
   @media (max-width: 1000px) and (min-width: 768px) {
-    div#past-books .old-cover {
+    div#past-books .cover, div#upcoming-books .cover {
       padding-right: 10px;
       height: 275px; }
-    div#past-books .old-book-text {
+    div#past-books .book-text, div#upcoming-books .book-text {
       height: 275px;
       padding-left: 20px; }
-      div#past-books .old-book-text h3 {
+      div#past-books .book-text h3, div#upcoming-books .book-text h3 {
         font-size: 24px; }
-      div#past-books .old-book-text p {
+      div#past-books .book-text p, div#upcoming-books .book-text p {
         font-size: 18px;
         font-weight: 300; } }
+
+div#upcoming-books {
+  display: none; }
 
 #about-dorothy {
   display: none; }

@@ -103,6 +103,10 @@ div#current-book {
     }
     @media (min-width: $tablet) AND (max-width: 1000px) {
         height: 276px;
+        p.about-book {
+            margin-top: 10px;
+            font-size: 16px !important;
+        }
         #student-teacher {
             width: 470px;
             span#students, span#for-teachers {
@@ -215,8 +219,11 @@ div#button-nav {
 
 div#past-books {
     display: block;
+}
+
+div#past-books, div#upcoming-books {
     height: 184px;
-    .old-book {
+    .book {
         .row {
             margin-right: 0;
         }
@@ -252,6 +259,11 @@ div#past-books {
         .col-sm-8 {
             height: 184px;
             position: relative;
+        }
+    }
+    @media (max-width: $tablet) {
+        img {
+            margin-bottom: 15px;
         }
     }
     div.audio-comments {
@@ -309,11 +321,11 @@ div#past-books {
     }
     @media (max-width: 1000px) AND (min-width: $tablet) {
 
-        .old-cover {
+        .cover {
             padding-right: 10px;
             height: 275px;
         }
-        .old-book-text {
+        .book-text {
             height: 275px;
             padding-left: 20px;
             h3 {
@@ -325,6 +337,10 @@ div#past-books {
             }
         }
     }
+}
+
+div#upcoming-books {
+    display: none;
 }
 
 #about-dorothy {
