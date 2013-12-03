@@ -217,11 +217,8 @@ div#button-nav {
     }
 }
 
-div#past-books {
-    display: block;
-}
-
 div#past-books, div#upcoming-books {
+    display: none;
     height: 184px;
     .book {
         .row {
@@ -339,12 +336,8 @@ div#past-books, div#upcoming-books {
     }
 }
 
-div#upcoming-books {
-    display: none;
-}
-
 #about-dorothy {
-    display: none;
+    display: block;
     #meet-amy {
         #contact-amy {
             margin-top: 60px;

@@ -16,8 +16,8 @@
         <h2>By RJ Palacio</h2>
         <p class="about-book">August Pullman was born with a facial deformity that, until now, has prevented him from going to a mainstream school. Wonder begins from Auggie’s point of view, but soon switches to include his classmates, his sister and others. These perspectives converge in a portrait of one community’s struggle with empathy, compassion and acceptance.</p>
         <div id="student-teacher">
-            <p class="about-book" id="question"><span id="students">Students:</span> Have a question for the author? <a href="#conversation">Ask it here.</a></p>
-            <p class="about-book"><span id="for-teachers">Teachers:</span> <a href="#conversation">Share</a> your lessons or <a id="contact-amy-prompt" href="#about-dorothy">contact</a> VPR's Amy Noyes</p>
+            <p class="about-book" id="question"><span id="students">Students:</span> Have a question for the author? <a href="http://digital.vpr.net/post/next-dorothys-list-wonder#disqus_thread">Ask it here.</a></p>
+            <p class="about-book"><span id="for-teachers">Teachers:</span> <a href="http://digital.vpr.net/post/next-dorothys-list-wonder#disqus_thread">Share</a> your lessons or <a id="contact-amy-prompt" href="mailto:anoyes@vpr.net">contact</a> VPR's Amy Noyes</p>
         </div>
     </div>
 </div>
@@ -26,13 +26,13 @@
 
 <div id="button-nav" class="row">
     <div class="col-sm-4">
-        <button type="button" id="past-book-btn" class="btn btn-success">Past Books</button>
+        <button type="button" id="about-dorothy-btn" class="btn btn-success">About Dorothy's List</button>
+    </div>
+    <div class="col-sm-4">
+        <button type="button" id="past-book-btn" class="btn btn-primary">Past Books</button>
     </div>
     <div class="col-sm-4">
         <button type="button" id="upcoming-book-btn" class="btn btn-primary">Upcoming Books</button>
-    </div>
-    <div class="col-sm-4">
-        <button type="button" id="about-dorothy-btn" class="btn btn-primary">About Dorothy's List</button>
     </div>
 </div>
 
@@ -151,7 +151,6 @@
                     <h3>Temple Grandin</h3>
                     <p>By Sy Montgomery</p>
                     <p>Dr. Temple Grandin is a scientist and professor of animal science at Colorado State University whose world-changing career revolutionized the livestock industry. Diagnosed with autism at the age of two, Temple uses her experience as an example of the unique contributions that autistic people can make. This compelling biography takes us inside her extraordinary mind and opens the door to a broader understanding of autism.</p>
-                    <p class="air-date">
                 </div>
             </div>
         </div>
@@ -178,9 +177,10 @@
         <h3>What is Dorothy's List?</h3>
         <p>Dorothy’s List is VPR’s book club for kids! Each month we highlight a book nominated for the Dorothy Canfield Fisher Children’s Book Award. We visit schools and libraries where the book is being read, check out how young readers are interacting with the book and relay students’ questions to the author.</p>
         <h3>The Dorothy Canfield Fisher Award</h3>
-        <p>First given in 1957, the Dorothy Canfield Fisher Children's Book Award has honored quality literature for children for over 55 years. Each spring, 30 finalists are named to the DCF Master List. After reading at least five books from the list, Vermont students in grades four through eight vote for their favorite. View past winners <a href="{{ url_for('static', filename='img/dcf-award-master-2013.pdf') }}">here</a>.</p>
+        <p>First given in 1957, the Dorothy Canfield Fisher Children's Book Award has <a href="https://sites.google.com/a/cesuvt.org/dcf-award/">honored quality literature for children</a> for over 55 years. Each spring, 30 nominees are named to the <a href="{{ url_for('static', filename='pdf/dcf-award-master-2013.pdf') }}">DCF Master List</a>. After reading at least five books from the list, Vermont students in grades four through eight vote for their favorite. Learn more <a href="http://dcfbooks.edublogs.org/">here</a>.</p>
         <h3>How to get involved</h3>
         <p>How does your school or library do DCF? Let us know! Share an activity or a lesson plan. Tell us what books you’d like to see highlighted on Dorothy’s List and why. And please let us know if you’re interested in participating in a future program!</p>
+        <p>Want to put up a poster for Dorothy's List in your classroom or library? <a href="{{ url_for('static', filename='pdf/vpr-dorothys-list-poster.pdf') }}">Click here</a> for a printable PDF or for a flyer, <a href="{{ url_for('static', filename='pdf/vpr-dorothys-list-flyer.pdf') }}">click here</a>.</p>
     </div>
     <div id="meet-amy" class="col-sm-5">
         <div class="row">
