@@ -232,10 +232,10 @@ div#button-nav div.col-sm-4 {
       border-radius: 0;
       margin-left: 0 !important;
       width: 100%; }
-    div#button-nav #past-book-btn {
-      border-radius: 3px 3px 0 0; }
+    div#button-nav #upcoming-book-btn {
+      border-radius: 0px 0px 3px 3px; }
     div#button-nav #about-dorothy-btn {
-      border-radius: 0 0 3px 3px; }
+      border-radius: 3px 3px 0 0; }
     div#button-nav div.col-sm-4 {
       margin-bottom: 0; } }
 
@@ -329,6 +329,11 @@ div#past-books, div#upcoming-books {
 
 #about-dorothy {
   display: block; }
+  #about-dorothy #meet-amy #poster {
+    line-height: 1.1em;
+    margin: 20px 0 0; }
+  #about-dorothy #meet-amy #click-pdf {
+    margin-top: 5px; }
   #about-dorothy #meet-amy #contact-amy {
     margin-top: 60px; }
   #about-dorothy #meet-amy h3 {
@@ -342,6 +347,9 @@ div#past-books, div#upcoming-books {
     color: #75787b; }
   #about-dorothy #meet-amy p {
     margin-top: 15px; }
+  @media (min-width: 1000px) {
+    #about-dorothy #meet-amy h3 {
+      margin-left: 15px; } }
   @media (max-width: 1000px) {
     #about-dorothy #meet-amy #contact-amy {
       margin-top: 40px; }

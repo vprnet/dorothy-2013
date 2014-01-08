@@ -204,11 +204,11 @@ div#button-nav {
             margin-left: 0 !important;
             width: 100%;
         }
-        #past-book-btn {
-            border-radius: 3px 3px 0 0;
+        #upcoming-book-btn {
+            border-radius: 0px 0px 3px 3px;
         }
         #about-dorothy-btn {
-            border-radius: 0 0 3px 3px;
+            border-radius: 3px 3px 0 0;
         }
         div.col-sm-4 {
             margin-bottom: 0;
@@ -339,6 +339,13 @@ div#past-books, div#upcoming-books {
 #about-dorothy {
     display: block;
     #meet-amy {
+        #poster {
+            line-height: 1.1em;
+            margin: 20px 0 0;
+        }
+        #click-pdf {
+            margin-top: 5px;
+        }
         #contact-amy {
             margin-top: 60px;
         }
@@ -356,6 +363,11 @@ div#past-books, div#upcoming-books {
         }
         p {
             margin-top: 15px;
+        }
+        @media (min-width: 1000px) {
+            h3 {
+                margin-left: 15px;
+            }
         }
         @media (max-width: 1000px) {
             #contact-amy {
