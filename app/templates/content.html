@@ -7,16 +7,16 @@
 
 <div id="current-book" class="row">
     <div class="col-sm-4">
-        <img class="img-responsive" src="{{ url_for('static', filename='img/cinnamon.jpg') }}">
+        <img class="img-responsive" src="{{ url_for('static', filename='img/temple.jpg') }}">
     </div>
     <div id="fold-copy" class="col-sm-8">
         <h3 id="this-month">This Month's Book</h3>
-        <h1>The Boy on Cinnamon Street</h1>
-        <h2>By Phoebe Stone</h2>
-        <p class="about-book">Seventh-grader Louise should be the captain of her school's gymnastics team&mdash;but she isn't. She's fun and cute and should have lots of friends&mdash;but she doesn't. And there's a dreamy boy who has a crush on her – but somehow they never connect. Louise has everything going for her&mdash;so what’s holding her back?</p>
+        <h1>Temple Grandin</h1>
+        <h2>By Sy Montgomery</h2>
+        <p class="about-book">Dr. Temple Grandin is a scientist and professor of animal science at Colorado State University whose world-changing career revolutionized the livestock industry. Diagnosed with autism at the age of two, Temple uses her experience as an example of the unique contributions that autistic people can make. This compelling biography takes us inside her extraordinary mind and opens the door to a broader understanding of autism.</p>
         <div id="student-teacher">
-            <p class="about-book" id="question"><span id="students">Students:</span> Have a question for the author? <a href="http://digital.vpr.net/post/dorothys-list-boy-cinnamon-street#disqus_thread">Ask it here.</a></p>
-            <p class="about-book"><span id="for-teachers">Teachers:</span> <a href="http://digital.vpr.net/post/dorothys-list-boy-cinnamon-street#disqus_thread">Share</a> your lessons or <a id="contact-amy-prompt" href="mailto:anoyes@vpr.net">contact</a> VPR's Amy Noyes</p>
+            <p class="about-book" id="question"><span id="students">Students:</span> Have a question for the author? <a href="http://digital.vpr.net/post/dorothys-list-how-embracing-thinking-pictures-brought-temple-grandin-success#disqus_thread">Ask it here.</a></p>
+            <p class="about-book"><span id="for-teachers">Teachers:</span> <a href="http://digital.vpr.net/post/dorothys-list-how-embracing-thinking-pictures-brought-temple-grandin-success#disqus_thread">Share</a> your lessons or <a id="contact-amy-prompt" href="mailto:anoyes@vpr.net">contact</a> VPR's Amy Noyes</p>
         </div>
     </div>
 </div>
@@ -37,6 +37,35 @@
 
 <div id="past-books" class="tabbed-content">
     <div class="row">
+        <div class="book col-md-6">
+            <div class="row">
+                <div class="col-sm-4">
+                    <a href="http://digital.vpr.net/post/dorothys-list-boy-cinnamon-street">
+                        <img class="cover img-responsive" src="{{ url_for('static', filename='img/cinnamon.jpg') }}">
+                    </a>
+                </div>
+                <div class="book-text col-sm-8">
+                    <h3><a href="http://digital.vpr.net/post/dorothys-list-boy-cinnamon-street">The Boy On Cinnamon Street</a></h3>
+                    <p>By Phoebe Stone</p>
+                    <p>Seventh-grader Louise should be the captain of her school's gymnastics team&mdash;but she isn't. She's fun and cute and should have lots of friends&mdash;but she doesn't. And there's a dreamy boy who has a crush on her – but somehow they never connect. Louise has everything going for her&mdash;so what’s holding her back?</p>
+                    <div class="audio-comments row">
+                        <div class="col-xs-4 audio-div">
+                            <span class="play-text">Play</span>
+                            <span class="audio-text">Audio</span>
+                            <a class="audio_play"><audio src="http://cpa.ds.npr.org/vpr/audio/2014/01/vpr-dorothys-list-010614.mp3#" type="audio/mpeg"></audio>
+                                <button type="button" class="btn btn-default audio-button">
+                                    <span class="glyphicon glyphicon-play"></span>
+                                </button>
+                            </a>
+                        </div>
+                        <div class="view-comments col-xs-8">
+                            <a href="http://digital.vpr.net/post/dorothys-list-boy-cinnamon-street#disqus_thread" class="count-comments" data-disqus-url="http://digital.vpr.net/post/dorothys-list-boy-cinnamon-street">View Comments (0)</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <hr class="visible-xs visible-sm">
+        </div>
         <div class="book col-md-6">
             <div class="row">
                 <div class="col-sm-4">
@@ -64,8 +93,10 @@
                     </div>
                 </div>
             </div>
-        <hr class="visible-xs visible-sm">
         </div>
+    </div>
+    <hr>
+    <div class="row">
         <div class="book col-md-6">
             <div class="row">
                 <div class="col-sm-4">
@@ -93,10 +124,8 @@
                     </div>
                 </div>
             </div>
+        <hr class="visible-xs visible-sm">
         </div>
-    </div>
-    <hr>
-    <div class="row">
         <div class="book col-md-6">
             <div class="row">
                 <div class="col-sm-4">
@@ -124,8 +153,10 @@
                     </div>
                 </div>
             </div>
-        <hr class="visible-xs visible-sm">
         </div>
+    </div>
+    <hr>
+    <div class="row">
         <div class="book col-md-6">
             <div class="row">
                 <a href="http://digital.vpr.net/post/dorothys-list-expeditioners">
@@ -156,34 +187,6 @@
 </div>
 
 <div id="upcoming-books">
-    <div class="row">
-        <div class="book col-md-6">
-            <div class="row">
-                <div class="col-sm-4">
-                    <img class="cover img-responsive" src="{{ url_for('static', filename='img/cinnamon.jpg') }}">
-                </div>
-                <div class="book-text col-sm-8">
-                    <h3>The Boy on Cinnamon Street</h3>
-                    <p>By Phoebe Stone</p>
-                    <p>Seventh-grader Louise should be the captain of her school's gymnastics team&mdash;but she isn't. She's fun and cute and should have lots of friends&mdash;but she doesn't. And there's a dreamy boy who has a crush on her – but somehow they never connect. Louise has everything going for her&mdash;so what’s holding her back?</p>
-                </div>
-            </div>
-        <hr class="visible-xs visible-sm">
-        </div>
-        <div class="book col-md-6">
-            <div class="row">
-                <div class="col-sm-4">
-                    <img class="cover img-responsive" src="{{ url_for('static', filename='img/temple.jpg') }}">
-                </div>
-                <div class="book-text col-sm-8">
-                    <h3>Temple Grandin</h3>
-                    <p>By Sy Montgomery</p>
-                    <p>Dr. Temple Grandin is a scientist and professor of animal science at Colorado State University whose world-changing career revolutionized the livestock industry. Diagnosed with autism at the age of two, Temple uses her experience as an example of the unique contributions that autistic people can make. This compelling biography takes us inside her extraordinary mind and opens the door to a broader understanding of autism.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <hr>
     <div class="row">
         <div class="book col-md-6">
             <div class="row">

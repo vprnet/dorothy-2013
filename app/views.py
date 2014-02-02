@@ -9,8 +9,8 @@ def index():
     social = {
         'title': "Dorothy's List",
         'subtitle': "VPR's Book Club For Kids",
-        'img': 'http://www.vpr.net/apps/dorothys-list/static/img/wonder.jpg',
-        'description': "Each month VPR highlights a book nominated for the Dorothy Canfield Fisher Children's Book Award. This month's book is 'Wonder' by R.J. Palacio.",
+        'img': 'http://www.vpr.net/apps/dorothys-list/static/img/temple.jpg',
+        'description': "Each month VPR highlights a book nominated for the Dorothy Canfield Fisher Children's Book Award. This month's book is 'Temple Grandin' by Sy Montgomery.",
         'twitter_text': "Read along with Dorothy's List, a VPR book club for kids:",
         'twitter_hashtag': 'books,reading'
     }
