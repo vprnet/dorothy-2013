@@ -41,7 +41,7 @@ div#current-book {
     }
     p.about-book {
         margin-top: 20px;
-        font-size: 22px;
+        font-size: 20px;
         font-weight: 300;
         line-height: 1.1em;
     }
@@ -240,6 +240,11 @@ div#past-books, div#upcoming-books {
     p {
         margin-bottom: 5px;
         line-height: 1.3em;
+    }
+    p.final_dorothys {
+        font-size: 18px;
+        margin-top: 15px;
+        font-weight: 300;
     }
     span.aired {
         color: lighten($gray, 20%);

@@ -114,7 +114,7 @@ div#current-book {
     font-weight: 500; }
   div#current-book p.about-book {
     margin-top: 20px;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 300;
     line-height: 1.1em; }
   div#current-book #fold-copy {
@@ -255,6 +255,10 @@ div#past-books, div#upcoming-books {
   div#past-books p, div#upcoming-books p {
     margin-bottom: 5px;
     line-height: 1.3em; }
+  div#past-books p.final_dorothys, div#upcoming-books p.final_dorothys {
+    font-size: 18px;
+    margin-top: 15px;
+    font-weight: 300; }
   div#past-books span.aired, div#upcoming-books span.aired {
     color: #a9abad; }
   div#past-books button.audio-button, div#upcoming-books button.audio-button {
