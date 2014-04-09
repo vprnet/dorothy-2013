@@ -53,7 +53,6 @@ div#current-book {
         bottom: 0;
         background: lighten($blue, 40%);
         padding: 10px;
-        margin-top: 50px;
         width: 95%;
         margin-right: 15px;
         line-height: 1.1em;
@@ -71,6 +70,7 @@ div#current-book {
         }
         p {
             margin-top: 10px;
+            font-size: 18px;
         }
         a {
             color: lighten($gray, 10%);
@@ -99,10 +99,10 @@ div#current-book {
         }
     }
     @media (min-width: 1000px) {
-        height: 369px;
+        height: 320px;
     }
     @media (min-width: $tablet) AND (max-width: 1000px) {
-        height: 276px;
+        height: 250px;
         p.about-book {
             margin-top: 10px;
             font-size: 16px !important;
